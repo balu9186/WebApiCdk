@@ -39,7 +39,7 @@ jobs:
 
     - name: Build CDK project
       working-directory: WebApi
-      run: dotnet build
+      run: dotnet build -c Release
 
     - name: Deploy CDK Stack
       working-directory: cdk-deploy
