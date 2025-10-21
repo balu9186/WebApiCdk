@@ -12,7 +12,7 @@ namespace WebApi.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var items = new string[] { "value1", "value2" };
+            var items = new string[] { "sample value1", "sample value2" };
             return Ok(items);
         }
 
