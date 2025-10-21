@@ -34,11 +34,11 @@ jobs:
       run: npm install -g aws-cdk
 
     - name: Install dependencies for CDK
-      working-directory: cdk-deploy
+      working-directory: WebApi
       run: dotnet restore
 
     - name: Build CDK project
-      working-directory: cdk-deploy
+      working-directory: WebApi
       run: dotnet build
 
     - name: Deploy CDK Stack
